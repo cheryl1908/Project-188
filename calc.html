@@ -1,0 +1,141 @@
+<html>
+   <head>
+      <script>
+         //function that display value
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+           
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+           
+         //function that clear the display
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+      <!-- for styling -->
+      <style>
+         .title{
+         margin-bottom: 10px;
+         text-align:center;
+         width: 210px;
+         color:green;
+         border: solid black 2px;
+         }
+  
+         input[type="button"]
+         {
+         background-color:rgb(105, 128, 0);
+         color: black;
+         border: solid black 2px;
+         width:100%
+         }
+  
+         input[type="text"]
+         {
+         background-color:white;
+         border: solid black 2px;
+         width:100%
+         }
+      </style>
+   </head>
+   <!-- create table -->
+   <body>
+      <div class = title > Calculator </div>
+      <table border="1">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+         </tr>
+      </table>
+
+	  <p> <u>Some important formulas <mark>in maths </mark> which may help you out! </u></p>
+	  <p> (A) <u>Formulas of <mark> profit and loss!</mark> </u></p>
+	  <p> 1. Profit = SP – CP</p>
+	  <p> 2. Loss = CP – SP</p>
+	  <p> 3. Profit (%) = {Profit/CP} × 100 </p>
+	  <p> 4. Loss (%) = {Loss/CP} × 100</p>
+	  <p> 5. Discount = Marked Price – Selling Price </p>
+	  <p> 6. Discount (%) = (Discount/MP) × 100</p>
+	  <p> 7. SP= [ (100+ Gain%)/ 100]x CP</p>
+	  <p> 8. SP= [ (100- Loss%)/ 100]x CP</p>
+	  <p> 9. CP= [100/ (100+ Gain%)]x SP</p>
+	  <p> 10. CP= [100/ (100- Loss%)]x SP</p>
+
+	  <p> (B) <u>Formulas for taking out <mark> area!</mark> </u> </p>
+	  <p> 1. Area of square = (side)² </p>
+	  <p> 2. Area of rectangle = length × breadth</p>
+	  <p> 3. Area of triangle = (1/2) × base × height</p>
+
+	  <p> (C) <u> Formulas for taking out <mark> perimeter!</mark> </u></p>
+	  <p> 1. Equilateral Triangle: The perimeter of equilateral triangle = 3 a.</p>
+	  <p> 2. Isosceles Triangle: Perimeter of isosceles triangle = 2s + b.</p>
+	  <p> 3. Scalene Triangle: Perimeter of scalene triangle = a + b + c.</p>
+	  <p> 4. Perimeter of square = 4 X side</p>
+	  <p> 5. Perimeter of reactangular = l X b</p>
+
+
+	  <p> <mark> <u> HISTORY OF MATHEMATICS</mark></p> </u> 
+	  <P> The history of mathematics is nearly as old as humanity itself. Since antiquity, mathematics has been fundamental to advances in science, engineering, and philosophy. It has evolved from simple counting, measurement and calculation, and the systematic study of the shapes and motions of physical objects, through the application of abstraction, imagination and logic, to the broad, complex and often abstract discipline we know today.
+
+		From the notched bones of early man to the mathematical advances brought about by settled agriculture in Mesopotamia and Egypt and the revolutionary developments of ancient Greece and its Hellenistic empire, the story of mathematics is a long and impressive one.
+		
+		The East carried on the baton, particularly China, India and the medieval Islamic empire, before the focus of mathematical innovation moved back to Europe in the late Middle Ages and Renaissance. Then, a whole new series of revolutionary developments occurred in 17th Century and 18th Century Europe, setting the stage for the increasing complexity and abstraction of 19th Century mathematics, and finally the audacious and sometimes devastating discoveries of the 20th Century.
+		
+		Follow the story as it unfolds in this series of linked sections, like the chapters of a book. Read the human stories behind the innovations, and how they made – and sometimes destroyed – the men and women who devoted their lives to… THE STORY OF MATHEMATICS.
+		
+		 
+		
+		This is not intended as a comprehensive and definitive guide to all of mathematics, but as an easy-to-use summary of the major mathematicians and the developments of mathematical thought over the centuries. It is not intended for mathematicians, but for the interested laity like myself.
+		
+		My intention is to introduce some of the major thinkers and some of the most important advances in mathematics, without getting too technical or getting bogged down in too much detail, either biographical or computational. Explanations of any mathematical concepts and theorems will be generally simplified, the emphasis being on clarity and perspective rather than exhaustive detail.
+		
+		It is beyond the scope is this study to discuss every single mathematician who has made significant contributions to the subject, just as it is impossible to describe all aspects of a discipline as huge in its scope as mathematics. The choice of what to include and exclude is my own personal one, so please forgive me if your favourite mathematician is not included or not dealt with in any detail.
+		
+		The main Story of Mathematics is supplemented by a List of Important Mathematicians and their achievements, and by an alphabetical Glossary of Mathematical Terms. You can also make use of the search facility at the top of each page to search for individual mathematicians, theorems, developments, periods in history, etc. Some of the many resources available for further study (of both included and excluded elements) are listed in the Sources section.</P>
+		<p> <mark> <u>WHAT IS MATHEMATICS?</mark></p> </body> </html> </u>
+		<p> Mathematics may be defined as “the study of relationships among quantities, magnitudes and properties, and also of the logical operations by which unknown quantities, magnitudes, and properties may be deduced” (according to Microsoft Encarta Encyclopedia) or “the study of quantity, structure, space and change” (Wikipedia).
+			Historically, it was regarded as the science of quantity, whether of magnitudes (as in geometry) or of numbers (as in arithmetic) or of the generalization of these two fields (as in algebra). Some have seen it in terms as simple as a search for patterns.
+			
+			During the 19th Century, however, mathematics broadened to encompass mathematical or symbolic logic, and thus came to be regarded increasingly as the science of relations or of drawing necessary conclusions (although some see even this as too restrictive).
+			
+			The discipline of mathematics now covers – in addition to the more or less standard fields of number theory, algebra, geometry, analysis (calculus), mathematical logic and set theory, and more applied mathematics such as probability theory and statistics – a bewildering array of specialized areas and fields of study, including group theory, order theory, knot theory, sheaf theory, topology, differential geometry, fractal geometry, graph theory, functional analysis, complex analysis, singularity theory, catastrophe theory, chaos theory, measure theory, model theory, category theory, control theory, game theory, complexity theory and many more.</p>
+
+   </body>
+</html>   
